@@ -1,0 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    height: 64px;
+    background-color: darkgrey;
+    color: white;
+}
