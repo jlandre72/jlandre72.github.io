@@ -16,7 +16,7 @@ body {
 }
 
 header, footer {
-    height: auto;
+    height: 64px;
     background-color: darkgrey;
     color: white;
     margin: 0;
