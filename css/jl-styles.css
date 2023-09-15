@@ -5,39 +5,37 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Caveat&family=Courgette&family=Inter&family=Lora&family=Montserrat&family=Nunito+Sans:opsz@6..12&family=Pacifico&family=Roboto&family=Ubuntu+Mono&display=swap');
 
-html, body, * {
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
 }
 
-div {
+header, footer {
+    height: auto;
+    background-color: darkgrey;
+    color: white;
     margin: 0;
     padding: 0;
 }
 
-header, footer {
-    height: 64px;
-    background-color: darkgrey;
-    color: white;
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
 
-main {
-    margin-top: 64px;
-    margin-bottom: 64px;
+#main {
+    margin: 0;
+    padding: 0;
 }
 
-aside {
-    float: left;
-    width: 24vw;
+#mylogo {
+    width: 32px;
 }
 
-section {
-    float: right;
-    width: 74vw;
-}
 
-.stopfloats {
-    clear: both;
-}

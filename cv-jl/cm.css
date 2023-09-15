@@ -1,0 +1,173 @@
+/*
+  JL Lecture Style
+  version 1.2.6
+  2022-01-12
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Istok+Web:wght@400;700&family=Montserrat&family=Roboto&family=Source+Code+Pro&family=Ubuntu+Mono");
+
+body { font-family: 'Montserrat', sans-serif; font-size: 20px; }
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: darkorange;
+    text-shadow: -2px -2px darkgray;
+}
+
+.remark-code, .remark-inline-code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.7em;
+}
+
+.important {
+    position: absolute;
+    top: 70%;
+    width: 33%;
+    left: 33%;
+    transform: rotate(-2.7deg);
+    color: darkorange;
+    font-size: 2.6em;
+}
+
+.petit {
+    color: darkorange;
+    font-size: 0.8em;
+}
+.remark-slide-content {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.remark-slide-content h1 { 
+  font-size: 2.4em; 
+  text-shadow: 4px 4px white, -4px -4px white,  -4px 4px white,  4px -4px white;
+}
+.remark-slide-content h2 { font-size: 2em; }
+.remark-slide-content h3 { font-size: 1.6em; }
+
+/* Final motto */
+.remark-slide-content h5 { font-size: 2.5em; }
+
+.footnote {
+  position: absolute;
+  bottom: 3em;
+}
+li p { line-height: 1.25em; }
+.red { color: darkorange; }
+.large { font-size: 2em; }
+a, a > code {
+  color: darkorange;
+  text-decoration: none;
+}
+code {
+  background: #e7e8e2;
+  border-radius: 5px;
+}
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+.remark-code-line-highlighted     { background-color: #373832; }
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+
+.triple {
+  display: flex;
+  flex-direction: row;
+  border: 1px dashed red;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.effacefloats {
+  clear: both;
+}
+.effacefloatscite {
+  clear: both;
+  font-size: 12px;
+}
+#slideshow .slide .content code {
+  font-size: 0.8em;
+}
+#slideshow .slide .content pre code {
+  font-size: 0.9em;
+  padding: 15px;
+}
+.inverse {
+  background: #272822;
+  color: #777872;
+  text-shadow: 0 0 20px #333;
+}
+.inverse h1, .inverse h2 {
+  color: #f3f3f3;
+  line-height: 0.8em;
+}
+.rouge {
+    color: red;
+    text-shadow: 1px 1px orange;
+}
+.vert {
+    color: green;
+    text-shadow: 1px 1px greenyellow;
+}
+/* Slide-specific styling */
+#slide-inverse .footnote {
+  bottom: 12px;
+  left: 20px;
+}
+#slide-how .slides {
+  font-size: 0.9em;
+  position: absolute;
+  top:  151px;
+  right: 140px;
+}
+#slide-how .slides h3 {
+  margin-top: 0.2em;
+}
+#slide-how .slides .first, #slide-how .slides .second {
+  padding: 1px 20px;
+  height: 90px;
+  width: 120px;
+  -moz-box-shadow: 0 0 10px #777;
+  -webkit-box-shadow: 0 0 10px #777;
+  box-shadow: 0 0 10px #777;
+}
+#slide-how .slides .first {
+  background: #fff;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 1;
+}
+#slide-how .slides .second {
+  position: relative;
+  background: #fff;
+  z-index: 0;
+}
+img {
+    padding: 8px;
+    border: 1px solid #555;
+    box-shadow: 2px 2px #777777;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align:center;
+}
+.centered {
+  display: flex;
+}
+h6 {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  transform: rotate(90);
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
+}
