@@ -125,12 +125,14 @@
                     </p><div id="my-id" uk-modal="" class="uk-modal">
                         <div class="uk-modal-dialog uk-modal-body">
                             <button class="uk-modal-close" type="button">X</button><h3 class="uk-modal-title">Mentions légales</h3>
-                            <p></p><ul>
-    <li>Le contenu de ce site a été rédigé par Jérôme LANDRÉ, mon courriel figure sur la partie adresse.</li>
-    <li>Ce site n'a pas vocation commerciale, il présente mes activités de recherche et d'enseignement.</li>
-    <li>Le site est hébergé par <a href="https://www.pulseheberg.com/" target="_blank">PulseHeberg</a>.</li>
-    <li>Aucun cookie ni aucune donnée personnelle n'est enregistré par ce site.</li>
-</ul><p></p>
+                            <p></p>
+                            <ul>
+                                <li>Le contenu de ce site a été rédigé par Jérôme LANDRÉ, mon courriel figure sur la partie adresse.</li>
+                                <li>Ce site n'a pas vocation commerciale, il présente mes activités de recherche et d'enseignement.</li>
+                                <li>Le site est hébergé par <a href="https://www.pulseheberg.com/" target="_blank">PulseHeberg</a>.</li>
+                                <li>Aucun cookie ni aucune donnée personnelle n'est enregistré par ce site.</li>
+                            </ul>
+                            <p></p>
                         </div>
                     </div>
                 <p></p>
@@ -162,7 +164,7 @@
                 <a href="https://jlandre.mmi-troyes.fr/c.php" id="itemTeaching" class="menuItem">Enseignement</a><br>
                 <a href="https://jlandre.mmi-troyes.fr/docs.php" id="itemDocs" class="menuItem">Documents</a><br>
                                 <!--br /-->
-                <a href="https://jlandre.mmi-troyes.fr/jl.php?lang=en">EN</a>/<a href="https://jlandre.mmi-troyes.fr/jl.php?lang=fr">FR</a>
+                <a href="?lang=en">EN</a>/<a href="https://jlandre.mmi-troyes.fr/jl.php?lang=fr">FR</a>
             </p>
         </nav>
 
@@ -205,12 +207,11 @@
                     slideIndex++;
                     if (slideIndex > x.length) {slideIndex = 1}
                     x[slideIndex-1].style.display = "block";
-                    setTimeout(carousel, 3000); // Change image every 2 seconds
+                    setTimeout(carousel, 5000); // Change image every 5 seconds
                 }
             })
         </script>
 
-      
-  
 
-</body><!-- fin corps HTML --></html>
+</body><!-- fin corps HTML -->
+</html>
