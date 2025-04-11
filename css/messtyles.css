@@ -11,7 +11,7 @@ html, body {
     color: black}
 
 #logo {
-    position: fixed;
+    position: absolute;
     left: 1vw;
     top: 1vw;
     width: 8vw;
@@ -20,12 +20,12 @@ html, body {
 }
 
 #burger, #burger_x {
-    position: fixed;
-    right: 1vw;
+    position: absolute;
+    left: 40vw;
     top: 1vw;
     width: 8vw;
     height: 8vw;
-    z-index: 100;
+    z-index: 50;
 }
 
 
