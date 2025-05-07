@@ -28,6 +28,9 @@ html, body {
     z-index: -1;
 }
 
+#burger_x {
+    right: 40vw;
+}
 
 .mySlides {
     width: 100vw;
