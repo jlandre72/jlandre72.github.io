@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
     <!-- début HTML -->
      <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  <!-- début entête HTML -->
         
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/gh/askask11/multi-language@0.1.4/dist/multi-language.min.js" integrity="sha256-xL5PbSBwYLKYaUvdDP2S/lnF9s3oAPm/92GnACZBe2c=" crossorigin="anonymous"></script>
 
         <!-- UIkit CSS -->
         <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" /-->
@@ -53,12 +55,21 @@
         <div id="begin"></div>
 
         <div id="contenu">
+            <div id="language">
+                <select id="choose-language">
+                    <option value="en" selected="selected">EN</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
             <div id="home">
                 <div class="title">
-                    <h1>Accueil</h1>
+                    <h1 lang="fr">Accueil</h1>
+                    <h1 lang="en">Welcome</h1>
                 </div>
-                <h2>Bienvenue sur mon site personnel</h2>
-                <p>Ce site présente les activités de recherche et d'enseignement que je développe dans le département Computer Science and Informatics (CSI) à l'Université de Jönköping (JU) en Suède.</p>
+                <h2 lang="fr">Bienvenue sur mon site personnel...</h2>
+                <h2 lang="en">Welcome on my personal website...</h2>
+                <p lang="fr">Ce site présente les activités de recherche et d'enseignement que je développe dans le département Computer Science and Informatics (CSI) à l'Université de Jönköping (JU) en Suède.</p>
+                <p lang="en">This site presents my research and education activities in the Computer Science and Informatics (CSI) department at Jönköping University (JU) in Sweden.</p>
 
                 <p class="images">
                     <a href="https://ju.se/personinfo.html?sign=LanJer&amp;lang=en" target="_blank"><img src="./jl_files/jl-ju.png" alt="Jerome Landre JU" class="survol" style="height:20vh;border:1px solid gray;border-radius:8px;padding:4px;"></a>
@@ -169,30 +180,27 @@
         </nav>
 
         <script>
-            $( document ).ready(function() {
-                $("#lemenu").toggle(0)
-                $("#burger_x").toggle(0)
-                $("#burger").click(
-                    function () {
-                        $('#lemenu').toggle(500)
-                        $('#burger').toggle(0)
-                        $('#burger_x').toggle(0)
-                    }
-                )
-                $("#burger_x").click(
-                    function () {
-                        $('#lemenu').toggle(500)
-                        $('#burger').toggle(0)
-                        $('#burger_x').toggle(0)
-                    }
-                )
-                $(".menuItem").click(
-                    function () {
-                        $('#lemenu').toggle(500)
-                        $('#burger').toggle(0)
-                        $('#burger_x').toggle(0)
-                    }
-                )
+            document.addEventListener('DOMContentLoaded', function() {
+
+                changeLanguage()
+
+                document.querySelector('#choose-language').addEventListener('change', function(event) {
+                    // event.target.value contains the selected value
+                    console.log('Selected value:', event.target.value);
+                    changeLanguage()
+                });
+
+                function changeLanguage() {
+                    document.querySelectorAll('[lang]').forEach(function(element) {
+                        element.style.display = 'none';
+                    });
+                    let chosen_language=document.querySelector("#choose-language").value
+                    console.log("Chosen_language: ", chosen_language)
+                    document.querySelectorAll('[lang="'+chosen_language+'"]').forEach(function(element) {
+                        element.style.display = 'inherit';
+                    });
+                }
+
 
                 // slide show from: https://www.w3schools.com/w3css/w3css_slideshow.asp
                 var slideIndex = 0;
@@ -209,7 +217,7 @@
                     x[slideIndex-1].style.display = "block";
                     setTimeout(carousel, 5000); // Change image every 5 seconds
                 }
-            })
+            });
         </script>
 
 </body><!-- fin corps HTML -->
