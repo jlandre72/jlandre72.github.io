@@ -5,16 +5,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  <!-- début entête HTML -->
         
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
         <script src="https://cdn.jsdelivr.net/gh/askask11/multi-language@0.1.4/dist/multi-language.min.js" integrity="sha256-xL5PbSBwYLKYaUvdDP2S/lnF9s3oAPm/92GnACZBe2c=" crossorigin="anonymous"></script>
 
         <!-- UIkit CSS -->
-        <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" /-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
 
         <!-- UIkit JS -->
-        <!--script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script-->
-        <!--script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script-->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
         <link href="css/spectre.min.css" type="text/css" rel="stylesheet">
 
 	    <link href="css/messtyles.css" type="text/css" rel="stylesheet">
@@ -128,7 +126,8 @@
 
         <footer>
             <div class="info">
-                <h2>Adresse :</h2>
+                <h2 lang="fr">Adresse :</h2>
+                <h2 lang="en">Address:</h2>
                 <p>
                     Jérôme LANDRÉ<br>
                     Assistant Professor<br>
@@ -140,17 +139,25 @@
                     <br>
                     <br>
                     <!-- This is a button toggling the modal -->
-                    <button uk-toggle="target: #my-id" type="button" aria-expanded="false">Mentions légales</button>
+                    <button uk-toggle="target: #my-id" type="button" aria-expanded="false" lang="fr">Mentions légales</button>
+                    <button uk-toggle="target: #my-id" type="button" aria-expanded="false" lang="en">Legal disclaimer</button>
                     <!-- This is the modal -->
                     </p><div id="my-id" uk-modal="" class="uk-modal">
                         <div class="uk-modal-dialog uk-modal-body">
-                            <button class="uk-modal-close" type="button">X</button><h3 class="uk-modal-title">Mentions légales</h3>
+                            <button class="uk-modal-close" type="button">X</button><h3 class="uk-modal-title" lang="fr">Mentions légales</h3><h3 class="uk-modal-title" lang="en">Legal disclaimer</h3>
                             <p></p>
                             <ul>
-                                <li>Le contenu de ce site a été rédigé par Jérôme LANDRÉ, mon courriel figure sur la partie adresse.</li>
-                                <li>Ce site n'a pas vocation commerciale, il présente mes activités de recherche et d'enseignement.</li>
-                                <li>Le site est hébergé par <a href="https://www.pulseheberg.com/" target="_blank">PulseHeberg</a>.</li>
-                                <li>Aucun cookie ni aucune donnée personnelle n'est enregistré par ce site.</li>
+                                <li lang="fr">Le contenu de ce site a été rédigé par Jérôme LANDRÉ, mon courriel figure sur la partie adresse.</li>
+                                <li lang="en">The content of this site was written by Jérôme LANDRÉ, my email address appears in the address section.</li>
+                                
+                                <li lang="fr">Ce site n'a pas vocation commerciale, il présente mes activités de recherche et d'enseignement.</li>
+                                <li lang="en">This site is not intended for commercial purposes; it presents my research and teaching activities.</li>
+                                
+                                <li lang="fr">Le site est hébergé par <a href="https://www.pulseheberg.com/" target="_blank">PulseHeberg</a>.</li>
+                                <li lang="en">The site is hosted by <a href="https://www.pulseheberg.com/" target="_blank">PulseHeberg</a>.</li>
+                                
+                                <li lang="fr">Aucun cookie ni aucune donnée personnelle n'est enregistré par ce site.</li>
+                                <li lang="en">No cookies or personal data are recorded by this site.</li>
                             </ul>
                             <p></p>
                         </div>
@@ -168,14 +175,16 @@
                 </p-->
             </div>
             <div class="info">
-                <h2>Plan d'accès :</h2>
+                <h2 lang="fr">Plan d'accès :</h2>
+                <h2 lang="en">Access map:</h2>
                 <iframe id="gmap" class="info" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2127.3324714344285!2d14.162199936097217!3d57.77873418787929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465a6dec7b538d19%3A0xe9a53722e7690a65!2zSlRILCA1NTMgMTggSsO2bmvDtnBpbmc!5e0!3m2!1sfr!2sse!4v1729085495475!5m2!1sfr!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
                 <!--iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2655.744731909587!2d4.077349816074941!3d48.26928677923419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee990d75231f69%3A0xaf56bd2c56819720!2sDUT%20M%C3%A9tiers%20de%20l&#39;Internet%20et%20du%20Multim%C3%A9dia!5e0!3m2!1sfr!2sfr!4v1567677820010!5m2!1sfr!2sfr" frameborder="0" style="border:0;" allowfullscreen=""></iframe-->
             </div>
             <div class="clearfloats">&nbsp;</div>
             <div id="pied">
-                JL - © 2020 et au-delà...            </div>
+                JL - © 2020 <span lang="fr">et au-delà</span><span lang="en">and beyond</span>...
+            </div>
         </footer>
         <script>
             document.addEventListener('DOMContentLoaded', function() {

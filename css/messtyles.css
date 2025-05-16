@@ -28,7 +28,7 @@ div a {
 }
 div a:hover {
     color: #FFA500;
-    text-shadow: 1px 1px black, 1px -1px lightgray, -1px 1px #FFA500, -1px -1px lightgray;
+    /*text-shadow: 1px 1px black, 1px -1px lightgray, -1px 1px #FFA500, -1px -1px lightgray;*/
 }
 
 
