@@ -10,32 +10,60 @@ html, body {
     background-color: white;
     color: black}
 
+#language {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
+    height: 48px;
+    padding: 2px;
+    font-size: 24px;
+}
+
+div a {
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px #FFA500;
+    text-decoration: none;
+}
+div a:hover {
+    color: #FFA500;
+    text-shadow: 1px 1px black, 1px -1px lightgray, -1px 1px #FFA500, -1px -1px lightgray;
+}
+
+
 #logo {
     position: absolute;
     left: 1vw;
-    top: 1vw;
+    top: 4vw;
     width: 8vw;
     height: 8vw;
     z-index: 50;
 }
 
-#burger, #burger_x {
-    position: absolute;
-    left: 40vw;
-    top: 1vw;
-    width: 8vw;
-    height: 8vw;
-    z-index: 51;
-}
-
-#burger_x {
-    right: 40vw;
-}
-
 .mySlides {
     width: 100vw;
-    margin: 0 auto;
+    margin: 32 auto;
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 60%, 0% 65%, 100% 85%, 100% 90%, 0% 70%, 0% 75%, 100% 95%, 100% 100%, 0% 100%);
+}
+
+nav {
+    width: 98vw;
+    margin: 0 auto;
+    display: inline;
+    text-align: center;
+}
+
+nav div {
+    display: inline;
+    width: 96vw;
+    margin: 0 auto;
+}
+
+
+#choose-language{
+    position: absolute;
+    right:32px;
 }
 
 #contenu {
@@ -76,29 +104,6 @@ img.survol:hover {
 }
 
 
-#lemenu {
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    background: orange;
-    opacity: 0.9;
-    filter: alpha(opacity=90); /* IE8 and lower */
-    zoom: 1; /* Triggers "hasLayout" in IE 7 and lower */
-}
-#lemenu p a {
-    color: white;
-    text-shadow: 2px 2px 2px #333;
-    text-decoration: none;
-}
-#lemenu p a:hover {
-    color: white;
-    text-shadow: 1px 1px black, 1px -1px lightgray, -1px 1px black, -1px -1px lightgray;
-}
 
 
 h1, h2, h3, h4, h5, h6 {

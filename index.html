@@ -20,10 +20,26 @@
 	    <link href="css/messtyles.css" type="text/css" rel="stylesheet">
     </head>  <!-- fin entête HTML -->
     <body>  <!-- début corps HTML -->
+        <div id="language">
+            <nav>
+                <div>
+                    <a href="#home" id="itemHomeFR" lang="fr">Accueil</a>
+                    <a href="#home" id="itemHomeEN" lang="en">Home</a>
+                    <a href="#research" id="itemResearchFR" lang="fr">Recherche</a>
+                    <a href="#research" id="itemResearchEN" lang="en">Research</a>
+                    <a href="#education" id="itemTeachingFR" lang="fr">Enseignement</a>
+                    <a href="#education" id="itemTeachingEN" lang="en">Teaching</a>
+                    <a href="#docs" id="itemDocsFR" lang="fr">Documents</a>
+                    <a href="#docs" id="itemDocsEN" lang="en">Documents</a>
+                    <select id="choose-language">
+                        <option value="en" selected="selected">EN</option>
+                        <option value="fr">FR</option>
+                    </select>
+                </div>
+            </nav>            
+        </div>
 
         <img src="img/jl.svg" alt="JL" id="logo">
-        <img src="img/burger.svg" alt="burger menu" id="burger">
-        <img src="img/burger_x.svg" alt="burger menu x" id="burger_x" style="display: none;">
 
         <img class="mySlides" src="img/slider/00-slider-sv-01.png" alt="00-slider-sv-01.png" style="display: none;">
         <img class="mySlides" src="img/slider/00-slider-sv-02.png" alt="00-slider-sv-02.png" style="display: none;">
@@ -52,15 +68,8 @@
         <img class="mySlides" src="img/slider/34.jpg" alt="34.jpg" style="display: none;">
         <img class="mySlides" src="img/slider/35.jpg" alt="35.jpg" style="display: none;">
         <img class="mySlides" src="img/slider/39.jpg" alt="39.jpg" style="display: none;">
-        <div id="begin"></div>
 
         <div id="contenu">
-            <div id="language">
-                <select id="choose-language">
-                    <option value="en" selected="selected">EN</option>
-                    <option value="fr">FR</option>
-                </select>
-            </div>
             <div id="home">
                 <div class="title">
                     <h1 lang="fr">Accueil</h1>
@@ -168,17 +177,6 @@
             <div id="pied">
                 JL - © 2020 et au-delà...            </div>
         </footer>
-        <nav id="lemenu" style="display: none;">
-            <p>
-                <a href="https://jlandre.mmi-troyes.fr/jl.php#home" id="itemHome" class="menuItem">Accueil</a><br>
-                <a href="https://jlandre.mmi-troyes.fr/r.php" id="itemResearch" class="menuItem">Recherche</a><br>
-                <a href="https://jlandre.mmi-troyes.fr/c.php" id="itemTeaching" class="menuItem">Enseignement</a><br>
-                <a href="https://jlandre.mmi-troyes.fr/docs.php" id="itemDocs" class="menuItem">Documents</a><br>
-                                <!--br /-->
-                <a href="?lang=en">EN</a>/<a href="?lang=fr">FR</a>
-            </p>
-        </nav>
-
         <script>
             document.addEventListener('DOMContentLoaded', function() {
 
