@@ -10,11 +10,22 @@ html, body {
     background-color: white;
     color: black}
 
-#language {
+#contenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    align-content: space-around;
     width: 96vw;
     height: 48px;
     padding: 2px;
@@ -25,12 +36,20 @@ div a {
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 2px #FFA500;
     text-decoration: none;
+    justify-content: space-around;
 }
+
 div a:hover {
     color: #FFA500;
     /*text-shadow: 1px 1px black, 1px -1px lightgray, -1px 1px #FFA500, -1px -1px lightgray;*/
 }
 
+#list_images {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    background-color: yellow;
+}
 
 #logo {
     position: absolute;
@@ -64,14 +83,6 @@ nav div {
 #choose-language{
     position: absolute;
     right:32px;
-}
-
-#contenu {
-    width: 96%;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin: 0 auto;
-    font-family: 'Nunito', sans-serif;
 }
 
 #home, #teaching, #research, #contact {
@@ -163,9 +174,8 @@ input, textarea {
 
 footer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    flex-direction: column;
+    flex-wrap: no-wrap;
     background: linear-gradient(17deg, lightgray, white);
     text-align: center;
     padding-top: 1%;
