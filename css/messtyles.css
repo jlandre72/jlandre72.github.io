@@ -190,6 +190,7 @@ footer {
     background-color: darkgray;
     color: white;
     width: 100%;
+    height: 32px;
 }
 
 .centre {
@@ -248,4 +249,5 @@ pre code {
 .uk-card {
     border: 1px solid lightgray;
 }
+
 
