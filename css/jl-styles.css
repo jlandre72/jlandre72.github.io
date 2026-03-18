@@ -61,3 +61,7 @@ footer {
 #blankspace {
     height: 400px;
 }
+
+.uk-card {
+    border: 1px solid lightgray;
+}
