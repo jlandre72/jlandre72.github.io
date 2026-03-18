@@ -233,5 +233,19 @@ pre code {
 }
 #information {
     display: flex;
-    
 }
+
+#legal {
+    display: inline;
+    width: 80px;
+    height: 32px;
+}
+
+#blankspace {
+    height: 400px;
+}
+
+.uk-card {
+    border: 1px solid lightgray;
+}
+
