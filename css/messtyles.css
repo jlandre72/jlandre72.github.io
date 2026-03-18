@@ -258,6 +258,8 @@ pre code {
 
 #cartes {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .carte {
@@ -265,7 +267,7 @@ pre code {
     padding: 8px;
     margin: 8px;
     border-radius: 8px;
-    width: 25%;
+    width: 28%;
 }
 
 #uptop {
