@@ -278,8 +278,8 @@ pre code {
     background-color: bisque;
     font-size: 32px;
     border-radius: 100%;
-    width: 32px;
-    height: 32px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%; /* Makes it a circle */
   
     /* Centering content inside */
