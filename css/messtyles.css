@@ -270,6 +270,10 @@ pre code {
     width: 28%;
 }
 
+#language {
+    width: 64px;
+    height: 64px;
+}
 #uptop {
     position: fixed;
     right: 8px;
